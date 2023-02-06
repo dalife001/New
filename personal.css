@@ -1,50 +1,83 @@
 
-  
-   body{background-image: url(933512.jpg);
-  background-attachment: fixed;
-background-size: 100% 100%;
-background-repeat: no-repeat;}
+            header {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              background-color: indigo;
+              padding: 1em;
+              position: fixed;
+              top: 0;
+              width: 100%;
+              box-sizing: border-box;
+            }
+          
+            .current-page {
+              color: white;
+              font-weight: bold;
+            }
+          
+            nav ul {
+              display: flex;
+              list-style: none;
+              margin: 0;
+              padding: 0;
+            }
+          
+            nav a {
+              color: white;
+              display: block;
+              padding: 1em;
+              text-decoration: none;
+            }
+            
+            nav input {
+              color: black;
+              display: block;
+              padding: 1em;
+              text-decoration: none;
+            }
+          
+            nav a:hover {
+              background-color: rgba(255, 255, 255, 0.2);
+            }
+          
+            @media (max-width: 500px) {
+              header {
+                flex-direction: column;
+              }
+          
+              nav {
+                display: none;
+              }
+          
+              .menu-toggle {
+                display: block;
+                background-color: indigo;
+                color: white;
+                padding: 1em;
+                cursor:crosshair
+              }
+          
+              .menu-toggle:hover {
+                background-color: rgba(255, 255, 255, 0.2);
+              }
+          
+              .menu {
+                display: none;
+                background-color: indigo;
+              }
+          
+              .menu a {
+                display: block;
+                padding: 1em;
+                color: white;
+                text-decoration: none;
+              }
+          
+              .menu a:hover {
+                background-color: rgba(255, 255, 255, 0.2);
+              }
+            }
 
-li{
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  background-size: cover;
 
-}
- 
-  .container {
-    width: 200px;
-    max-width: 100px;
-    margin: 0px;
-    padding: 0px;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-    border-radius: var(--border-radius);
-    
-  align-items: center;
-  justify-content: center;
-   
-    
-  }
-
-  .form__button{
-    width: 50%;
-    padding: 1rem 2rem;
-    font-size: larger;
-    color: darkred;
-    border: none;
-    outline: auto;
-    
-  } .icon-menu{
-    border-style: double
-    ; float: left;
-  }
-  h1 {
-     
-  }
-  
-
-  
+            h3{ background-color: yellow;}

@@ -14,34 +14,31 @@
         
 
     <body class="index">
-      
+
+
+       
+       <h3> this is still progress stuff so get your shit down </h3>
           
-
-            <div class="dropdown-content" id="name">
-            </div>
-
-        </button>
-        <li>
-            <div class="container">
-                <h1>Welcome</h1>
-                <form class="form" id="button">
-
-                    <button class="form__button" type="Home">Home</button><br>
-                    <a href="Legal.html">
-                    <button class="form__button" type="legal">Policy</a></button><br>
-
-                    <button class="form__button" type="submit">Search</button><br>
-                    <a href="log.html">
-                    <button class="form__button">Log
-                      </a>
-                    </button><br>
-
-               
-                </form>
-              
-                
-        </button>
-      
+          <header>
+            <span class="menu-toggle">Menu</span>
+            <nav class="menu">
+              <ul>
+                <li><a class="current-page" href="#home">Home</a></li>
+                <li><a href="Legal.html">Policy</a></li>
+                <li><input type="text" placeholder="Search.."></li>
+                <li><a href="#log">Log</a></li>
+              </ul>
+            </nav>
+          </header>
+          
+          <script>
+            const menuToggle = document.querySelector(".menu-toggle");
+            const menu = document.querySelector(".menu");
+          
+            menuToggle.addEventListener("click", function() {
+              menu.style.display = menu.style.display === "block" ? "none" : "block";
+            });
+          </script>
         </body>
         </head>
     </html>
